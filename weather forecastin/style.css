@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(141deg, rgba(2, 0, 36, 1) 0%, rgba(21, 141, 148, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+
+}
+
+.heading {
+    margin: 12px;
+    font-size: 55px;
+}
+
+.inputandlabel {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    position: relative;
+}
+
+.information {
+    position: relative;
+}
+
+
+.inputandlabel>input {
+    margin: 0px;
+    /* padding: 45px; */
+    width: 265px;
+}
+
+.inputandlabel>label {
+    font-size: 25px;
+}
+
+.feedbackclass {
+    /* border: 2px solid red; */
+    position: absolute;
+    color: rgb(248, 6, 6);
+    display: none;
+    top: 10px;
+    left: 52px;
+    font: 12px;
+}
+
+.weatherinformation {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 450px;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.weatherdetails {
+    padding: 6px;
+    font-size: 20px;
+}
+
+#searchbutton {
+    margin: 0px;
+    background-color: #0b798b;
+    border: none;
+    width: 56px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::placeholder {
+    margin: 12px;
+    transition: all 0.3s;
+    font-family:Arial, Helvetica, sans-serif !important;
+    
+}
+
+.labeltext {
+    position: absolute;
+    bottom: 7px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+    left: 54px;
+    transition: all 0.3s;
+    /* display: none; */
+    z-index: -1;
+}
+
+
+#input:focus ~ .labeltext{
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(-22px);
+    z-index: 0;
+    
+}
+
+.inputandlabel>input:focus {
+    outline: none;
+   
+}
+
+.inputandlabel>input:focus::placeholder {
+    transform: translateY(-20px);
+    transition: all 0.3s;
+}
+
