@@ -65,6 +65,7 @@ body {
     height: 150px;
     width: 450px;
     margin-top: 40px;
+    background-color: #0e5669;
     /* border: 2px solid red; */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
